@@ -1,0 +1,283 @@
+fileVersion: 1
+id: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+name: DIM_PART
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: Part data as defined by TPC-H
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8215f911-0c1c-4034-a60a-13bef4edb236
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSurrogateKey: true
+        name: DIM_PART_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2464ce3-f834-4782-b3fb-9638443f9aa1
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: P_PARTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bfaaba03-f459-423b-addf-9ea636549380
+                stepCounter: 72d151c0-6e6d-4bc1-982b-82eb050b08b7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48b38cfd-68e0-4ad6-9033-92f3b8609bd2
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: VARCHAR(55)
+        description: ""
+        name: P_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d578df6b-99bc-4020-a5eb-22ebccc6fe39
+                stepCounter: 72d151c0-6e6d-4bc1-982b-82eb050b08b7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d13679e2-4dfa-4dd3-8800-2be02d944309
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: P_MFGR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a11a836e-be2a-4550-bada-9099509c7df7
+                stepCounter: 72d151c0-6e6d-4bc1-982b-82eb050b08b7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11f6b35a-b403-43e4-aa74-347db1399f50
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: P_BRAND
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b70be632-724c-489e-a2a1-0be92d73bc70
+                stepCounter: 72d151c0-6e6d-4bc1-982b-82eb050b08b7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 462958de-39be-48eb-a45d-7b5149300ff6
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: P_TYPE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 777797d4-44cb-4314-a254-ef4f619ab3c2
+                stepCounter: 72d151c0-6e6d-4bc1-982b-82eb050b08b7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61072524-cab7-4696-b0bc-83b0ed5e0a1f
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: P_SIZE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69830ae8-669e-4886-9710-f69bcfab11fe
+                stepCounter: 72d151c0-6e6d-4bc1-982b-82eb050b08b7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1489b50-44b9-4e10-9b50-f7b32ba2f1ad
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: P_CONTAINER
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44151bba-7294-431a-9254-ed4ccc832271
+                stepCounter: 72d151c0-6e6d-4bc1-982b-82eb050b08b7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33be8876-aa5d-471a-8790-97fbdcf26ddc
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: P_RETAILPRICE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b7d60a8-ecbf-4451-8dc6-fc579696687b
+                stepCounter: 72d151c0-6e6d-4bc1-982b-82eb050b08b7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 060a9243-65b1-46e5-a316-82b5466744d8
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: VARCHAR(23)
+        description: ""
+        name: P_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9093819a-6b70-4799-938f-e14e99b45b56
+                stepCounter: 72d151c0-6e6d-4bc1-982b-82eb050b08b7
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4a89f1d-4111-42ce-ad16-2bfa23684fc5
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        isSystemVersion: true
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 487f7632-210a-408d-8a44-8834925c024b
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        isSystemCurrentFlag: true
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cba803b3-1edb-45fb-88ac-2e5ce5740517
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemStartDate: true
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9a70b63b-d240-4c24-a8de-e777b0fc4f9d
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemEndDate: true
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e24d8d7-e380-46cb-80e5-8025e79dd191
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f747424-60c3-4ce3-982b-ac4cb0bdf53b
+          stepCounter: 8a2a28d3-a8eb-4a4b-9a51-7998e2e14782
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: STG_PART
+        join:
+          joinCondition: FROM {{ ref('WORK', 'STG_PART') }} "STG_PART"
+        name: DIM_PART
+        noLinkRefs: []
+  name: DIM_PART
+  overrideSQL: false
+  schema: ""
+  sqlType: Dimension
+  type: sql
+  version: 1
+type: Node
