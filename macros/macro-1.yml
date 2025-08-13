@@ -3,7 +3,8 @@ id: "1"
 macroString: |-
   {% macro segment_filter(alias, column) -%}
     {{ alias }}.{{ column }} = '{{ parameters.target_segment }}'
- # comment 
+    # comment 
   {%- endmacro %}
 name: macro
 type: Macro
+
