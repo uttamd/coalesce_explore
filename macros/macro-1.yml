@@ -1,0 +1,8 @@
+fileVersion: 1
+id: "1"
+macroString: |-
+  {% macro segment_filter(alias, column) -%}
+    {{ alias }}.{{ column }} = '{{ parameters.target_segment }}'
+  {%- endmacro %}
+name: macro
+type: Macro
